@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cam_identify"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="#55000000"
+            android:hint="@string/txt_idcam"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textColor="#f8e71d"
+            android:textColorHint="#f8e71d"
+            android:textSize="20sp" />
+
+        <Chronometer
+            android:id="@+id/chronometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ff0000"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+            <ImageButton
+                android:id="@+id/mRecordImageButton"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_margin="15dp"
+                android:background="@drawable/button"
+                app:srcCompat="@drawable/flash" />
+
+            <ImageButton
+                android:id="@+id/bt_flash"
+                android:layout_width="70sp"
+                android:layout_height="70sp"
+                android:layout_margin="15dp"
+                android:background="@drawable/button"
+                app:srcCompat="@drawable/flash" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

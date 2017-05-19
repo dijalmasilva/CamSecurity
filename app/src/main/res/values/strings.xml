@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">CamSecurity</string>
+    <string name="txt_startcam">Iniciar Aplicação como Câmera</string>
+    <string name="txt_camdescr">Para iniciar ligue o aparelho no carregador, posicione o
+    aparelho e acione o botão - Iniciar como Cam.</string>
+    <string name="bt_startcam">Iniciar como Cam</string>
+    <string name="txt_startctrl">Iniciar Aplicação como Controle</string>
+    <string name="txt_ctrldescr">Antes de iniciar ligue a aplicação como WebCam em outro
+    dispositivo e copie o código da WebCam.</string>
+    <string name="bt_startctrl">Iniciar como Controle</string>
+    <string name="title_activity_camrecord">camrecord</string>
+    <string name="tittle_initial">Menu Inicial</string>
+    <string name="tittle_webcam">Web Cam</string>
+    <string name="tittle_settings">Configuração do Controle</string>
+    <string name="tittle_records">Gravações</string>
+    <string name="tittle_record">Gravação</string>
+    <string name="tittle_realtime">Ao vivo</string>
+    <string name="txt_settingDetail">Digite o código da WebCam e acione qualquer um dos botões abaixo.</string>
+    <string name="bt_record_one_minute">Gravar por 1 minuto</string>
+    <string name="bt_see_records">Ver gravações</string>
+    <string name="bt_realtime">Assistir ao vivo</string>
+    <string name="txt_idcam">CAM AS3912-291</string>
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303030"
+    tools:context="dijalmasilva.com.br.camsecurity.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="20dp"
+        android:text="@string/txt_startcam"
+        android:textColor="#fff"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginRight="50dp"
+        android:paddingBottom="25dp"
+        android:paddingLeft="20dp"
+        android:text="@string/txt_camdescr"
+        android:textColor="#727272" />
+
+    <RelativeLayout
+        android:id="@+id/button_starCam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button_cam_start"
+            android:layout_width="300dp"
+            android:layout_height="70dp"
+            android:background="#d0011b"
+            android:text="@string/bt_startcam"
+            android:textColor="#fff" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_starCam"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="15dp"
+            android:paddingLeft="20dp"
+            android:text="@string/txt_startctrl"
+            android:textColor="#fff"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView3"
+            android:layout_marginRight="50dp"
+            android:paddingBottom="25dp"
+            android:paddingLeft="20dp"
+            android:text="@string/txt_ctrldescr"
+            android:textColor="#727272" />
+
+        <RelativeLayout
+            android:id="@+id/button_startctrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView4"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/button_ctrl_setting"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:background="#4990e2"
+                android:text="@string/bt_startctrl"
+                android:textColor="#fff" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

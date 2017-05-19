@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_control_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303030"
+    android:padding="20dp"
+    tools:context="dijalmasilva.com.br.camsecurity.ControlSetting">
+
+    <TextView
+        android:id="@+id/texttest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:text="@string/txt_settingDetail"
+        android:textColor="#727272" />
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/texttest"
+        android:layout_margin="15dp"
+        android:hint="@string/txt_idcam"
+        android:padding="12dp"
+        android:textColorHighlight="#fff"
+        android:textColor="#f8e71d"
+        android:textColorHint="#f8e71d" />
+
+    <Button
+        android:id="@+id/record_one_minute"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText"
+        android:layout_margin="15dp"
+        android:layout_marginTop="38dp"
+        android:background="#d0011b"
+        android:text="@string/bt_record_one_minute"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/see_records"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/record_one_minute"
+        android:layout_margin="15dp"
+        android:layout_marginTop="48dp"
+        android:background="#f8e71d"
+        android:text="@string/bt_see_records"
+        android:textColor="#000" />
+
+    <Button
+        android:id="@+id/real_time"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_below="@+id/see_records"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:background="#7ed320"
+        android:text="@string/bt_realtime"
+        android:textColor="#000" />
+</RelativeLayout>
