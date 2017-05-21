@@ -5,13 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#303030"
-    tools:context="dijalmasilva.com.br.camsecurity.Records">
+    tools:context="br.com.dijalmasilva.Records">
 
     <ListView
         android:id="@+id/records"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
     </ListView>
 
 </RelativeLayout>

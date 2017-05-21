@@ -3,114 +3,6 @@
 
     <item
         is-multidex="true"
-        jar="/home/dijalma/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.2.0/support-annotations-25.2.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="4a5a82a027706397fff621b22fd6fa796e91d7c5">
-        <dex dex="/home/dijalma/AndroidStudioProjects/CamSecurity/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.2.0_ec0a0741bb9cc9ea4ba19f7d10235b9141532de4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/dijalma/.android/build-cache/7b11b71214a6c5fa73c30c8ad9c4871cd6bc7ccc/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="cb454b52545859ed2f24a6c01366805b0fa04b22">
-        <dex dex="/home/dijalma/AndroidStudioProjects/CamSecurity/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_bf321b9ee53dc9fd1da3c7731220941fa7df5539/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/dijalma/.android/build-cache/6f30f3a6bc690b30837a9447c3a2939649b6c997/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="810f41e5b7fd99f196ebeabe865ba2c54e7e76dc">
-        <dex dex="/home/dijalma/AndroidStudioProjects/CamSecurity/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e20035ffb271c5514e38cec777989f071693dd4a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/dijalma/.android/build-cache/4f85240b3a88c67b48ae53976b67af2fd12dbc58/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="fa0446a14ed5dd3725047d6399ffea771a564b30">
-        <dex dex="/home/dijalma/AndroidStudioProjects/CamSecurity/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ac7c0dd64e766e44cd1e19ec887e5d8948ee4055/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/dijalma/.android/build-cache/e26c07e19a2e51a3c025044ffd01d0f9d97faa63/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ea6a989b83d19b1b461281e0475a6cd6514897f8">
-        <dex dex="/home/dijalma/AndroidStudioProjects/CamSecurity/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_95fc1c4891ae343d8fd9651ed8b0e430a5b1a6c4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/dijalma/.android/build-cache/6b2ca7333ae7add03208fc8f77bbbde79b09cff8/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="67eb33110dbacb46a48175b08ae0c96761d2c17d">
-        <dex dex="/home/dijalma/AndroidStudioProjects/CamSecurity/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_e85ccb1ad1c6d4dd9ef433d81d2c08d517110d95/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/dijalma/.android/build-cache/910bedba2ae1266c5ed6ff37f94b2e0e6ceee2bf/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e51c2f662bb72419632af5192553c37e33890a99">
-        <dex dex="/home/dijalma/AndroidStudioProjects/CamSecurity/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7e8b386918742d62a50805390320aa08fd6a9d62/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/dijalma/.android/build-cache/7da02f8e5a481beb7420e107f7883559e4b551c6/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/home/dijalma/AndroidStudioProjects/CamSecurity/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_5dbde0f4d7c6fe72d6025516dddaf43ad24a839a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/dijalma/.android/build-cache/d28d2e2e564501a37037f681d2ba1313ac42fee5/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="152de8da301561dcb0946471697a420d8f7a68c5">
-        <dex dex="/home/dijalma/AndroidStudioProjects/CamSecurity/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c1cb34afcff5788467c17ebba17ac70e17ba7ce3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/dijalma/.android/build-cache/713c435f20df8d5e7ceadfd08e3e12e43f416f40/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e820b7be8c035dd522da4bc822e8a76c8e27921a">
-        <dex dex="/home/dijalma/AndroidStudioProjects/CamSecurity/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ea560ccec5676836f45aac427bbe68780b18e0a4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/dijalma/.android/build-cache/e366a7e2dd027921eae52feacba522ff6e7e1e76/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="702d339bc0a81d21354cd7e2cf2b67225fa4a16c">
-        <dex dex="/home/dijalma/AndroidStudioProjects/CamSecurity/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_9500f30ce4407b08348b786ffc31770e8b85299e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/dijalma/.android/build-cache/4d6594e0a9659ae0bf24dbe339cb6dd7f6608959/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="8fe8a8f77d651982ce5e18f6187dc4daf914ac57">
-        <dex dex="/home/dijalma/AndroidStudioProjects/CamSecurity/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_da10a861cc1c75cb0065be493d57046854de235e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/dijalma/AndroidStudioProjects/CamSecurity/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
@@ -120,12 +12,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/dijalma/.android/build-cache/dd2e4a570804ade7fa6b98b1073bbca85508ec45/output/jars/classes.jar"
+        jar="/home/dijalma/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/1.3.2/b6dde38349ba9bb5e6ea6320531eae969985dae5/commons-io-1.3.2.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="ee394a892dd21c03a528139c1e8d4e0e1264ac84">
-        <dex dex="/home/dijalma/AndroidStudioProjects/CamSecurity/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c1868e04d019fc4179cb27df3d22a97dfe67d3ed/classes.dex" />
+        sha1="b6dde38349ba9bb5e6ea6320531eae969985dae5">
+        <dex dex="/home/dijalma/AndroidStudioProjects/CamSecurity/app/build/intermediates/transforms/dex/debug/folders/1000/10/commons-io-1.3.2_8a0565844c30d7858701f0ed89937e09840dc2f1/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -133,7 +25,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="3f4a111d9e6b53b421703c7c14c1b630ab1eabfb">
+        sha1="4a1e2604b6caf33cd9c5567dc44258cff4f86bb2">
         <dex dex="/home/dijalma/AndroidStudioProjects/CamSecurity/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_19433b298bb682d82ed67e9d2a21b841c2ec1501/classes.dex" />
     </item>
 

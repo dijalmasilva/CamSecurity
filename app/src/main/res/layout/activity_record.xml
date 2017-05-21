@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#303030"
-    tools:context="dijalmasilva.com.br.camsecurity.Record">
+    tools:context="br.com.dijalmasilva.Record">
 
     <include layout="@layout/layout_video"></include>
 

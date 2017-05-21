@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="dijalmasilva.com.br.camsecurity">
+    package="br.com.dijalmasilva">
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
@@ -25,7 +27,7 @@
         <activity android:name=".ControlSetting" />
         <activity android:name=".Record" />
         <activity android:name=".RealTime" />
-        <activity android:name=".Records"></activity>
+        <activity android:name=".Records" />
     </application>
 
 </manifest>
