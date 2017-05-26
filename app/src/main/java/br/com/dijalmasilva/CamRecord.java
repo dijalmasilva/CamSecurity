@@ -2,6 +2,7 @@ package br.com.dijalmasilva;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.graphics.SurfaceTexture;
@@ -23,7 +24,6 @@ import android.support.annotation.NonNull;
 import android.support.annotation.RequiresApi;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.util.Size;
 import android.util.SparseIntArray;
 import android.view.Surface;
@@ -39,6 +39,7 @@ import android.widget.Toast;
 
 import java.io.File;
 import java.io.IOException;
+import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -47,13 +48,16 @@ import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
 
+import br.com.dijalmasilva.pdm.forms.RecordForm;
 import br.com.dijalmasilva.pdm.models.WebCam;
+import br.com.dijalmasilva.services.RecordSendService;
 
 @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
 public class CamRecord extends AppCompatActivity {
 
     private static final int REQUEST_CAMERA_PERMISSION_RESULT = 0;
     private static final int REQUEST_WRITE_EXTERNAL_STORAGE_PERMISSION_RESULT = 1;
+    private static final int REQUEST_READ_EXTERNAL_STORAGE_PERMISSION_RESULT = 2;
     private TextureView mTexturePreview;
     private TextureView.SurfaceTextureListener mSurfaceTextureListener = new TextureView.SurfaceTextureListener() {
 
@@ -124,6 +128,7 @@ public class CamRecord extends AppCompatActivity {
     private int mTotalRotation;
     private CaptureRequest.Builder mCaptureRequestBuilder;
     private boolean flash = false;
+    private WebCam camActivity;
 
     private ImageButton mRecordImageButton;
     private boolean mIsRecording;
@@ -160,7 +165,7 @@ public class CamRecord extends AppCompatActivity {
         createVideoFolder();
         //
         final Bundle extras = this.getIntent().getExtras();
-        WebCam camActivity = (WebCam) extras.get("CamActivity");
+        camActivity = (WebCam) extras.get("CamActivity");
         //
         mMediaRecorder = new MediaRecorder();
         //
@@ -199,9 +204,30 @@ public class CamRecord extends AppCompatActivity {
                     mChronometer.stop();
                     mChronometer.setVisibility(View.INVISIBLE);
                     mIsRecording = false;
-                    Toast.makeText(getApplicationContext(), "Parou a gravação!", Toast.LENGTH_SHORT).show();
                     mMediaRecorder.stop();
                     mMediaRecorder.reset();
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                        if (ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+                            if (shouldShowRequestPermissionRationale(Manifest.permission.READ_EXTERNAL_STORAGE)) {
+                                Toast.makeText(getApplicationContext(), "Aplicação necessita acesso aos arquivos!", Toast.LENGTH_SHORT).show();
+                            }
+                            requestPermissions(new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, REQUEST_READ_EXTERNAL_STORAGE_PERMISSION_RESULT);
+                        }
+                    }
+                    File record = new File(mVideoFileName);
+                    RecordForm recordForm = new RecordForm();
+                    recordForm.setNameWebCam(camActivity.getNameCam());
+                    recordForm.setRecord(record);
+                    Date date = new Date();
+                    recordForm.setDate(new java.sql.Date(date.getTime()));
+                    recordForm.setImagePreview(null);
+                    recordForm.setHour(new Timestamp(date.getTime()));
+                    //chamar servico de enviar gravação
+                    Intent intent = new Intent(getApplicationContext(), RecordSendService.class);
+                    intent.putExtra("record", recordForm);
+                    startService(intent);
+                    Toast.makeText(getApplicationContext(),
+                            "Parou a gravação e enviando para o servidor!", Toast.LENGTH_SHORT).show();
                     startPreview();
                 } else {
                     checkWriteStoragePermission();
@@ -241,6 +267,12 @@ public class CamRecord extends AppCompatActivity {
                 Toast.makeText(this, "Permissão garantida com sucesso!", Toast.LENGTH_SHORT).show();
             } else {
                 Toast.makeText(this, "Aplicação precisa salvar vídeos para rodar!", Toast.LENGTH_SHORT).show();
+            }
+        }
+
+        if (requestCode == REQUEST_READ_EXTERNAL_STORAGE_PERMISSION_RESULT) {
+            if (grantResults[0] != PackageManager.PERMISSION_GRANTED) {
+                Toast.makeText(this, "Aplicação precisa acessar os vídeos para funcionar corretamente!", Toast.LENGTH_SHORT).show();
             }
         }
     }

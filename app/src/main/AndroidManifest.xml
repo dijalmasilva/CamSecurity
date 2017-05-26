@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
@@ -28,6 +29,8 @@
         <activity android:name=".Record" />
         <activity android:name=".RealTime" />
         <activity android:name=".Records" />
+
+        <service android:name=".services.RecordSendService" />
     </application>
 
 </manifest>

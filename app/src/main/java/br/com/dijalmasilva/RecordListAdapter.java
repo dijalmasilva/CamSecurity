@@ -44,17 +44,19 @@ public class RecordListAdapter extends BaseAdapter {
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
         View view_record = activity.getLayoutInflater().inflate(R.layout.layout_record, viewGroup, false);
-
+        //
+        final RecordVO recordVO = records.get(i);
+        //
         ImageView imagePreview = (ImageView) view_record.findViewById(R.id.image_preview);
         TextView nameCam = (TextView) view_record.findViewById(R.id.recordCam);
         TextView dateRecord = (TextView) view_record.findViewById(R.id.recordDate);
         TextView hourRecord = (TextView) view_record.findViewById(R.id.recordHour);
-
+        //
         imagePreview.setBackgroundResource(R.drawable.sample);
-        nameCam.setText("CAM_SISIA28-99");
-        dateRecord.setText("02/06/2017");
-        hourRecord.setText("09:01");
-
+        nameCam.setText(recordVO.getNameWebCam());
+        dateRecord.setText(recordVO.getData());
+        hourRecord.setText(recordVO.getHour());
+        //
         return view_record;
     }
 }

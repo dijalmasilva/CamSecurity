@@ -1,7 +1,6 @@
 package br.com.dijalmasilva.services;
 
 import android.content.Context;
-import android.os.AsyncTask;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -45,7 +44,7 @@ public class WebCamService {
         //save in Server
         //save ID result from CAM server
         try {
-            httpRequest = new HttpRequest(Constants.HOST.getValue() + rest);
+            httpRequest = new HttpRequest(Constants.HOST_WITH_PROTOCOL.getValue() + rest);
             WebCam webCam = new WebCam("");
             webCam.setActivate(true);
             Map<String, String> headers = new HashMap<>();
@@ -67,7 +66,7 @@ public class WebCamService {
     private WebCam recoverWebCam() {
         try {
             Long id = findIDCamInTheDatabase();
-            httpRequest = new HttpRequest(Constants.HOST.getValue() + rest + "/" + id);
+            httpRequest = new HttpRequest(Constants.HOST_WITH_PROTOCOL.getValue() + rest + "/" + id);
             final JSONObject jsonObject = httpRequest.get().sendAndReadJSON();
             final WebCam webCam = ConvertObjectsJSON.convertToWebCam(jsonObject);
             webCam.setActivate(true);

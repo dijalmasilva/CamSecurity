@@ -10,6 +10,8 @@ public class RecordVO implements Serializable {
 
     private Long id;
     private String nameWebCam;
+    private String data;
+    private String hour;
     private File record;
     private File imagePreview;
 
@@ -23,6 +25,22 @@ public class RecordVO implements Serializable {
 
     public String getNameWebCam() {
         return nameWebCam;
+    }
+
+    public String getData() {
+        return data;
+    }
+
+    public void setData(String data) {
+        this.data = data;
+    }
+
+    public String getHour() {
+        return hour;
+    }
+
+    public void setHour(String hour) {
+        this.hour = hour;
     }
 
     public void setNameWebCam(String nameWebCam) {

@@ -2,6 +2,7 @@ package br.com.dijalmasilva.services;
 
 import android.util.Log;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -118,5 +119,9 @@ public class HttpRequest {
 
     public JSONObject sendAndReadJSON() throws JSONException, IOException {
         return new JSONObject(sendAndReadString());
+    }
+
+    public JSONArray sendAndReadArrayJSON() throws IOException, JSONException {
+        return new JSONArray(sendAndReadString());
     }
 }

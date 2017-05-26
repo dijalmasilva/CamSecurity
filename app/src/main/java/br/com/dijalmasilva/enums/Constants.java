@@ -5,7 +5,8 @@ package br.com.dijalmasilva.enums;
  */
 public enum Constants {
 
-    HOST("http://192.168.0.107:8080");
+    HOST("192.168.0.108"), HOST_WITH_PROTOCOL("http://192.168.0.108:8080");
+//    HOST("10.3.27.148"), HOST_WITH_PROTOCOL("http://10.3.27.148:8080");
 
     private String value;
 
